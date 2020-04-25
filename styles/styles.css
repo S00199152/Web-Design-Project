@@ -164,14 +164,23 @@ p {
 }
 
 #tabletennis2 {
-    margin-right: 15px;
+    margin-right: 10px;
     border: 1px;
     border-style: solid;
     border-color: grey;
+    color: black;
+    column-count: 3;
+    column-rule: 2px solid black;
+    column-gap: 20px;
+    padding: 4px;
 }
 
 #tabletennis2, h2 {
     font-size: 24px;
+}
+
+#tabletennis2, h3 {
+    font-size: 20px;
 }
 
 #choose {
@@ -238,4 +247,62 @@ footer ul{
 footer ul li a: hover {
     text-decoration: underline;
     text-decoration-color: blue;
+}
+
+a: hover {
+    text-decoration: underline;
+}
+
+.required {
+    font-weight: bold;
+    color: red;
+}
+
+label {
+    float: left;
+    width: 112px;
+    padding-right: 10px;
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+    width: 220px;
+}
+
+input[type="radio"]{
+    width: 10px;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+}
+
+#button {
+    margin-left: 138px;
+}
+
+#button, #reset {
+    margin-top: .5em;
+    width: 8em;
+    background-color: orange;
+    border: 2px solid black;
+}
+
+table {
+    width: 100%;
+    border 5px;
+    border-style: solid;
+    border-color: black;
+    border-collapse: collapse;
+    font-size: 20px;
+    margin: 20px;
+}
+
+table tr, th, td{
+    border 1px;
+    border-style: solid;
+    border-color: black;
+    text-align: left;
 }

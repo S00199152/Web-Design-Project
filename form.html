@@ -1,0 +1,128 @@
+<!DOCTYPE HTML>
+<!-- The followinglines are comments
+    Author :          Shayaan Khan
+    Date Created:     25/4/2020
+    Page Description: Sporting Website, Feedback/Query Form
+                             -->
+
+<html lang="en">
+<head>
+    <style>
+    #formmain {
+    margin: 15px, 200px;
+    padding: 20px;
+    border: solid black;
+    background: white;
+    opacity: 0.75;
+    min-height: 500px;
+}
+
+    #formbody {
+    font-family: sans-serif;
+    background-image: url(images/cricket%20stadium.jpg);
+    margin: 10px;
+    background-size: cover;
+}
+    #formp {
+    position: relative;
+    top: 10px;
+    font-style: italic;
+    text-align: inherit;
+}    
+    #thankyou {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: inherit;
+    height: 300px;
+    width: 600px;
+}
+    .thankyoumessage, center {
+    font-size: 30px;        
+}
+    </style>
+    <link rel="icon" type="image/png" href="images/favicomatic/favicon-32x32.png" sizes="32x32" />
+    <meta charset="utf-8" />
+    <meta name="description" content="Sport Website">
+    <meta name="keywords" content="Sporting Website, Feedback, Comments, Queries">
+    <meta name="author" content="Shayaan Khan">
+    <title>KnowYourSport</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+    </head>
+    <body id="formbody">
+    
+        <header id="formheader">
+            <img style="float: left; height: 50px; width: 50px;" src="images/sport%20logo.jpg" alt="logo">
+            <h1>KnowYourSport</h1>
+        </header>
+        <a name="pagetop"></a>
+        
+         <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="cricket.html"> Cricket</a></li>
+                <li><a href="badminton.html"> Badminton</a></li>
+                <li><a href="tennis.html"> Tennis</a></li>
+                <li><a href="tabletennis.html"> Table Tennis</a></li>
+                <li><a href="video.html">Video Tour</a></li>
+                <li id="active"><a href="form.html">Feedback Form</a></li>
+            </ul>
+        </nav>
+        
+        <main id="formmain">
+            
+            <section>
+                <p id="formp">Any Queries or Feedback you have can be submitted by completing the form below</p>
+                <p id="formp">Please enter the following information:</p>
+                
+                <form action="http://year1.ccpdev.me/FormTest.php" method="post">
+                
+                <label for="first_name">First name:<span class="required">*</span></label>
+                <input type="text" name="first_name" id="first_name" autofocus required><br>
+                <label for="last_name">Last name:<span class="required">*</span></label>
+                <input type="text" name="last_name" id="last_name" required><br>
+                <label for="email">Email:<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required placeholder="cricketplayer@example.com"><br>
+                <br>
+                <label for="gender">Gender :</label>
+                <input type="radio" id="gender" name="gender" value="male"> Male
+                <input type="radio" id="gender" name="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" value="other" checked> Other <br>
+                <br>
+                <label for="excellent"> Was the information helpful:</label>
+                <fieldset>
+                    <input type="checkbox" id="excellent" name="excellent" value="excellent" checked> Very Helpful <br>
+                    <input type="checkbox" class="marginl" id="great" name="great" value="great"> Helpful <br>
+                    <input type="checkbox" class="marginl" id="good" name="good" value="good"> Average <br>
+                    <input type="checkbox" class="marginl" id="bad" name="bad" value="bad"> Below Average <br>
+                    <input type="checkbox" class="marginl" id="poor" name="poor" value="poor"> Not Helpful <br>
+                </fieldset>
+                <br>
+                <label for="message">Query : </label>
+                
+                <textarea cols="40"rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea> <br>
+                <br>
+                <label for="excellent"> Page Layout Quality :</label>
+                <fieldset>
+                    <input type="checkbox" id="excellent" name="excellent" value="excellent" checked> Excellent <br>
+                    <input type="checkbox" class="marginl" id="great" name="great" value="great"> Great <br>
+                    <input type="checkbox" class="marginl" id="good" name="good" value="good"> Good <br>
+                    <input type="checkbox" class="marginl" id="bad" name="bad" value="bad"> Bad <br>
+                    <input type="checkbox" class="marginl" id="poor" name="poor" value="poor"> Poor <br>
+                </fieldset>
+                <br>
+                <label for="message">Query : </label>
+                
+                <textarea cols="40"rows="6" id="message" name="message" placeholder="Your message must be less than 200 characters" data-maxlength="200"></textarea> <br>
+                    
+                <input type="submit" name="submit" id="button" value="Submit">
+                <input type="reset" name="reset" id="reset">
+                </form>
+                <p style="margin-left: 138px"> <span class="required">*</span> <em> indicates a required field </em></p>
+                
+                <img id="thankyou" src="images/thank%20you.gif" alt="Thank You">
+                <p class="thankyoumessage"><center>Thank you for using my website! I hope you enjoyed it!</center></p>
+            </section>
+        </main>
+    </body>
+</html>
